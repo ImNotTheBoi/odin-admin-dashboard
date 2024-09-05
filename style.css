@@ -34,16 +34,39 @@ body {
     grid-template-rows: 1fr 5fr;
 }
 
+:root {
+    font-size: 1vh;
+}
+
 .header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     background-color: #eef2ff;
     grid-column: 2 / span 1;
 }
 
 .sidebar {
+    padding: 3em 3em;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: 4vh;
+    gap: 1em;
     background-color: #818cf8;
     grid-row: 1 / span 2;
 }
 
+.sidebar > * {  
+    font-size: 3rem;
+}
+
+.sidebar .hero-text {
+    grid-row: 1 / span 2;
+}
+
+.sidebar .hero-text {
+    font-size: 4rem;
+}
 .main-section {
     background-color: #c7d2fe;
 }
+
