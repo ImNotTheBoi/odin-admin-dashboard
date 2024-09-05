@@ -26,6 +26,7 @@
     isolation: isolate;
   }
 
+/* Global Properties */
 body {
     display: grid;
     width: 100vw;
@@ -35,16 +36,89 @@ body {
 }
 
 :root {
-    font-size: 1vh;
+    font-size: 0.8vh;
 }
 
+.profile {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Header Section */
 .header {
+    padding: 2em 6em;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    gap: 3em;
     background-color: #eef2ff;
     grid-column: 2 / span 1;
 }
 
+.upper-section {
+    display: flex;
+    gap: 8em;
+    align-items: center;
+}
+
+.search-bar{
+    width: 100%;
+}
+
+.search-bar input {
+    width: 100%;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+    margin-left: auto;
+}
+
+.user-profile .img-container {
+    height: 2em;
+    width: 2em;
+}
+
+.user-profile div {
+    font-size: 2.5rem;
+}
+
+.lower-section {
+    display: flex;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+    gap: 2.5em;
+    align-items: center;
+}
+
+.user-info .img-container {
+    width: 3em;
+    height: 3em;
+}
+
+.user-info div {
+    font-size: 3rem;
+}
+
+.user-info span {
+    font-size: 2.5rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 3em;
+    margin-left: auto;
+}
+
+.buttons button {
+    width: 5em  ;
+    font-size: 3rem;
+}
+
+/* Sidebar Section */
 .sidebar {
     padding: 3em 3em;
     display: grid;
