@@ -26,9 +26,10 @@
     isolation: isolate;
   }
 
-/* Global Properties */
+/* * Global Properties */
 body {
     display: grid;
+    overflow-x: hidden;
     width: 100vw;
     height: 100vh;
     grid-template-columns: 1fr 4fr;
@@ -44,7 +45,7 @@ body {
     object-fit: cover;
 }
 
-/* Header Section */
+/* * Header Section */
 .header {
     padding: 2em 6em;
     display: grid;
@@ -118,7 +119,7 @@ body {
     font-size: 3rem;
 }
 
-/* Sidebar Section */
+/* * Sidebar Section */
 .sidebar {
     padding: 3em 3em;
     display: grid;
@@ -140,7 +141,84 @@ body {
 .sidebar .hero-text {
     font-size: 4rem;
 }
+
+/* * Main Section */
 .main-section {
+    padding: 4em 3em;
+    padding-right: 6em;
+    display: grid;
+    column-gap: 4em;
+    row-gap: 6em;
+    grid-template-columns: 2fr 1fr; 
     background-color: #c7d2fe;
+}
+
+.project-section,
+.announcements-section,
+.trending-section {  
+    display: grid;
+    grid-template-rows: 0fr 1fr;
+    gap: 2em; 
+}
+
+.project-section .hero-text,
+.announcements-section .hero-text,
+.trending-section .hero-text {
+    font-size: 3rem;
+    border: #818cf8 solid;
+}
+
+.project-section {
+    grid-row-end: span 2;  
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 2em;
+}
+
+.projects .card {
+    background-color: #eef2ff;
+}
+
+.projects .card div {
+    padding: 1.5em;
+    font-size: 2.4em;
+}
+
+.side-section {
+    display: grid;
+    gap: 3em;
+}
+
+.announcements {
+    padding: 3em 5em;
+    background-color: #eef2ff;
+}
+
+.announcements .card {
+    padding-bottom: 1rem;
+    font-size: 2.2rem;
+    border-bottom: #818cf8 solid;
+}
+
+.trending {
+    padding: 3em 5em;
+    background-color: #eef2ff;
+}
+
+.trending .card {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    padding-bottom: 1rem;
+    font-size: 2.2rem;
+}
+
+.trending .card .img-container {
+    width: 3em;
+    height: 3em;
 }
 
